@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: placement_engine_Discovery_Service
+server:
+  port: 8761
+eureka:
+  instance:
+      hostname: localhost
+  client:
+      registerWithEureka: false
+      fetchRegistry: false
+      serviceUrl:
+         defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

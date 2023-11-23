@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: Placement_Engine_Gateway_Service
+
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+
+      routes:
+        - id: Placement_Engine_Company_Service
+          uri: http://localhost:8084
+          predicates:
+            - Path=/com/**
+        - id: Placement_Engine_Registration_Service
+          uri: http://localhost:8082
+          predicates:
+            - Path=/register/**

@@ -1,0 +1,15 @@
+2023-11-23 11:51:27,293 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-11-23 11:56:27,324 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-11-23 12:01:27,327 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-11-23 12:06:27,351 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-11-23 12:11:27,368 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-11-23 12:16:27,375 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-11-23 12:20:56,495 INFO  [SpringApplicationShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Unregistering application PLACEMENT_ENGINE_REGISTRATION_SERVICE with eureka with status DOWN
+2023-11-23 12:20:56,497 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1700722256496, current=DOWN, previous=UP]
+2023-11-23 12:20:56,498 INFO  [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient : DiscoveryClient_PLACEMENT_ENGINE_REGISTRATION_SERVICE/LP-5CD151GDVP.HCLT.CORP.HCL.IN:Placement_Engine_Registration_Service:8082: registering service...
+2023-11-23 12:20:56,555 INFO  [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient : DiscoveryClient_PLACEMENT_ENGINE_REGISTRATION_SERVICE/LP-5CD151GDVP.HCLT.CORP.HCL.IN:Placement_Engine_Registration_Service:8082 - registration status: 204
+2023-11-23 12:20:56,624 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'placement_engine_registration'
+2023-11-23 12:20:56,680 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : Shutting down DiscoveryClient ...
+2023-11-23 12:20:59,695 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : Unregistering ...
+2023-11-23 12:20:59,713 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : DiscoveryClient_PLACEMENT_ENGINE_REGISTRATION_SERVICE/LP-5CD151GDVP.HCLT.CORP.HCL.IN:Placement_Engine_Registration_Service:8082 - deregister  status: 200
+2023-11-23 12:20:59,725 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : Completed shut down of DiscoveryClient
