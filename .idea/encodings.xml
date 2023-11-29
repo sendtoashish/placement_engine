@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/mail-Service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mail-Service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/placement-engine-authentication-service/placement-engine-authentication-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/placement-engine-authentication/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/placement-engine-company-service/placement-engine-company-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/placement-engine-discovery-service/placement-engine-discovery-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/placement-engine-gateway-service/placement-engine-gateway-service/src/main/java" charset="UTF-8" />

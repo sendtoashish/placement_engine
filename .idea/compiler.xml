@@ -11,13 +11,19 @@
         <module name="placement-engine-discovery-service" />
         <module name="placement-engine-gateway-service" />
         <module name="mail-Service" />
+        <module name="placement-engine-authentication" />
         <module name="placement-engine-registration-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="placement-engine-authentication-service" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="mail-Service" options="-parameters" />
+      <module name="placement-engine-authentication" options="-parameters" />
+      <module name="placement-engine-authentication-service" options="-parameters" />
       <module name="placement-engine-company-service" options="-parameters" />
       <module name="placement-engine-discovery-service" options="-parameters" />
       <module name="placement-engine-gateway-service" options="-parameters" />

@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/placement-engine-registration-service/placement-engine-registration-service/pom.xml" />
         <option value="$PROJECT_DIR$/placement-engine-gateway-service/placement-engine-gateway-service/pom.xml" />
         <option value="$PROJECT_DIR$/mail-Service/pom.xml" />
+        <option value="$PROJECT_DIR$/placement-engine-authentication-service/placement-engine-authentication-service/pom.xml" />
+        <option value="$PROJECT_DIR$/placement-engine-authentication/pom.xml" />
       </list>
     </option>
   </component>

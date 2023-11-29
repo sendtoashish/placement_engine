@@ -11,3 +11,15 @@ eureka:
 spring:
   application:
     name: Placement_Engine_Mail_Service
+  kafka:
+    consumer:
+      bootstrap-servers: http://34.16.184.43:29092
+      group-id: group_id
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+    producer:
+      bootstrap-servers: http://34.16.184.43:29092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
