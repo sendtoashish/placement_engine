@@ -29,7 +29,7 @@ public class UserDetailsService {
 
     @Autowired
     private otpDAO otpdao;
-    private String Folder = "C:\\Users\\gautamas\\Downloads\\Myfiles\\";
+    private String Folder = "C:\\Users\\bhard\\placement_files\\";
 
 
     @Bean

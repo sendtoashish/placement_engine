@@ -13,4 +13,8 @@ public interface UserRegistrationDAO extends JpaRepository<UserRegistration,Long
 
     @Query("SELECT u FROM UserRegistration_details u WHERE uuid = :uuid"  )
     public UserRegistration findUserByUID(String uuid);
+
+
+    @Query("SELECT password from UserRegistration_details u WHERE username = :username")
+    public String findByUsername(String username);
 }

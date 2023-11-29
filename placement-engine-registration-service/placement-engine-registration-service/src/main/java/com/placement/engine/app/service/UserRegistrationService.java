@@ -95,4 +95,8 @@ public class UserRegistrationService {
         }
         return user;
     }
+
+    public String findByUsername(String username){
+        return userRegistration.findByUsername(username);
+    }
 }

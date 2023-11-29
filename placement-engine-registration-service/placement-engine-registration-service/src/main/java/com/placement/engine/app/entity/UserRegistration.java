@@ -19,6 +19,8 @@ public class UserRegistration {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String uuid;
+    private String username;
+    private String password;
     private String name;
     private String email;
     @Column(columnDefinition="tinyint(1) default 0")
