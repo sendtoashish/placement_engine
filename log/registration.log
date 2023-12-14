@@ -1,180 +1,52 @@
-2023-11-29 10:34:37,396 INFO  [main] com.placement.engine.app.PlacementEngineRegistrationServiceApplication : Starting PlacementEngineRegistrationServiceApplication using Java 21.0.1 on Lenovo41 with PID 16160 (C:\Users\bhard\IdeaProjects\placement_engine\placement-engine-registration-service\placement-engine-registration-service\target\classes started by bhard in C:\Users\bhard\IdeaProjects\placement_engine)
-2023-11-29 10:34:37,537 DEBUG [main] com.placement.engine.app.PlacementEngineRegistrationServiceApplication : Running with Spring Boot v2.7.16, Spring v5.3.30
-2023-11-29 10:34:37,538 INFO  [main] com.placement.engine.app.PlacementEngineRegistrationServiceApplication : No active profile set, falling back to 1 default profile: "default"
-2023-11-29 10:34:39,912 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-11-29 10:34:40,321 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 385 ms. Found 6 JPA repository interfaces.
-2023-11-29 10:34:40,928 INFO  [main] org.springframework.cloud.context.scope.GenericScope : BeanFactory id=626e1908-f5cc-3575-9da2-f8bee75c5d69
-2023-11-29 10:34:41,094 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'datasource' of type [com.placement.engine.app.configuration.Datasource$$EnhancerBySpringCGLIB$$f792509d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-11-29 10:34:42,171 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8082 (http)
-2023-11-29 10:34:42,193 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
-2023-11-29 10:34:42,194 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.80]
-2023-11-29 10:34:42,558 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
-2023-11-29 10:34:42,558 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4532 ms
-2023-11-29 10:34:49,239 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'placement_engine_registration'
-2023-11-29 10:34:50,710 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-11-29 10:34:53,164 INFO  [main] org.springframework.cloud.commons.util.InetUtils : Cannot determine local hostname
-2023-11-29 10:34:53,252 INFO  [main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2023-11-29 10:34:54,356 INFO  [main] org.springframework.cloud.commons.util.InetUtils : Cannot determine local hostname
-2023-11-29 10:34:54,612 WARN  [main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-11-29 10:34:54,833 INFO  [main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory : Setting initial instance status as: STARTING
-2023-11-29 10:34:55,015 INFO  [main] com.netflix.discovery.DiscoveryClient : Initializing Eureka in region us-east-1
-2023-11-29 10:34:55,099 INFO  [main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
-2023-11-29 10:34:55,649 INFO  [main] com.netflix.discovery.DiscoveryClient : Disable delta property : false
-2023-11-29 10:34:55,650 INFO  [main] com.netflix.discovery.DiscoveryClient : Single vip registry refresh property : null
-2023-11-29 10:34:55,650 INFO  [main] com.netflix.discovery.DiscoveryClient : Force full registry fetch : false
-2023-11-29 10:34:55,651 INFO  [main] com.netflix.discovery.DiscoveryClient : Application is null : false
-2023-11-29 10:34:55,654 INFO  [main] com.netflix.discovery.DiscoveryClient : Registered Applications size is zero : true
-2023-11-29 10:34:55,654 INFO  [main] com.netflix.discovery.DiscoveryClient : Application version is -1: true
-2023-11-29 10:34:55,654 INFO  [main] com.netflix.discovery.DiscoveryClient : Getting all instance registry info from the eureka server
-2023-11-29 10:34:57,941 INFO  [main] com.netflix.discovery.DiscoveryClient : The response status is 200
-2023-11-29 10:34:57,947 INFO  [main] com.netflix.discovery.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
-2023-11-29 10:34:57,957 INFO  [main] com.netflix.discovery.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2023-11-29 10:34:57,972 INFO  [main] com.netflix.discovery.DiscoveryClient : Discovery Client initialized at timestamp 1701234297968 with initial instances count: 0
-2023-11-29 10:34:57,977 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Registering application PLACEMENT_ENGINE_REGISTRATION_SERVICE with eureka with status UP
-2023-11-29 10:34:57,982 INFO  [main] com.netflix.discovery.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1701234297982, current=UP, previous=STARTING]
-2023-11-29 10:34:57,984 INFO  [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient : DiscoveryClient_PLACEMENT_ENGINE_REGISTRATION_SERVICE/localhost:Placement_Engine_Registration_Service:8082: registering service...
-2023-11-29 10:34:58,908 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8082 (http) with context path ''
-2023-11-29 10:34:58,909 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration : Updating port to 8082
-2023-11-29 10:34:59,750 INFO  [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient : DiscoveryClient_PLACEMENT_ENGINE_REGISTRATION_SERVICE/localhost:Placement_Engine_Registration_Service:8082 - registration status: 204
-2023-11-29 10:34:59,933 INFO  [main] org.springframework.cloud.commons.util.InetUtils : Cannot determine local hostname
-2023-11-29 10:35:00,123 INFO  [main] com.placement.engine.app.PlacementEngineRegistrationServiceApplication : Started PlacementEngineRegistrationServiceApplication in 24.921 seconds (JVM running for 26.591)
-2023-11-29 10:35:27,959 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : Disable delta property : false
-2023-11-29 10:35:27,959 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : Single vip registry refresh property : null
-2023-11-29 10:35:27,959 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : Force full registry fetch : false
-2023-11-29 10:35:27,960 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : Application is null : false
-2023-11-29 10:35:27,960 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : Registered Applications size is zero : true
-2023-11-29 10:35:27,961 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : Application version is -1: false
-2023-11-29 10:35:27,961 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : Getting all instance registry info from the eureka server
-2023-11-29 10:35:28,062 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : The response status is 200
-2023-11-29 10:39:55,725 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
-2023-11-29 10:44:55,800 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
-2023-11-29 10:49:55,822 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
-2023-11-29 10:52:35,813 INFO  [http-nio-8082-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-11-29 10:54:55,855 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
-2023-11-29 10:59:56,972 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
-2023-11-29 11:00:35,300 INFO  [SpringApplicationShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Unregistering application PLACEMENT_ENGINE_REGISTRATION_SERVICE with eureka with status DOWN
-2023-11-29 11:00:35,332 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1701235835332, current=DOWN, previous=UP]
-2023-11-29 11:00:35,334 INFO  [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient : DiscoveryClient_PLACEMENT_ENGINE_REGISTRATION_SERVICE/localhost:Placement_Engine_Registration_Service:8082: registering service...
-2023-11-29 11:00:36,027 INFO  [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient : DiscoveryClient_PLACEMENT_ENGINE_REGISTRATION_SERVICE/localhost:Placement_Engine_Registration_Service:8082 - registration status: 204
-2023-11-29 11:00:36,800 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'placement_engine_registration'
-2023-11-29 11:00:37,295 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : Shutting down DiscoveryClient ...
-2023-11-29 11:00:40,327 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : Unregistering ...
-2023-11-29 11:00:40,517 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : DiscoveryClient_PLACEMENT_ENGINE_REGISTRATION_SERVICE/localhost:Placement_Engine_Registration_Service:8082 - deregister  status: 200
-2023-11-29 11:00:40,554 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : Completed shut down of DiscoveryClient
-2023-11-29 11:02:59,580 INFO  [main] com.placement.engine.app.PlacementEngineRegistrationServiceApplication : Starting PlacementEngineRegistrationServiceApplication using Java 21.0.1 on Lenovo41 with PID 22920 (C:\Users\bhard\IdeaProjects\placement_engine\placement-engine-registration-service\placement-engine-registration-service\target\classes started by bhard in C:\Users\bhard\IdeaProjects\placement_engine)
-2023-11-29 11:02:59,590 DEBUG [main] com.placement.engine.app.PlacementEngineRegistrationServiceApplication : Running with Spring Boot v2.7.16, Spring v5.3.30
-2023-11-29 11:02:59,591 INFO  [main] com.placement.engine.app.PlacementEngineRegistrationServiceApplication : No active profile set, falling back to 1 default profile: "default"
-2023-11-29 11:03:03,294 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-11-29 11:03:03,794 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 472 ms. Found 6 JPA repository interfaces.
-2023-11-29 11:03:04,653 INFO  [main] org.springframework.cloud.context.scope.GenericScope : BeanFactory id=626e1908-f5cc-3575-9da2-f8bee75c5d69
-2023-11-29 11:03:04,883 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'datasource' of type [com.placement.engine.app.configuration.Datasource$$EnhancerBySpringCGLIB$$e171af16] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-11-29 11:03:06,538 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8082 (http)
-2023-11-29 11:03:06,568 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
-2023-11-29 11:03:06,570 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.80]
-2023-11-29 11:03:06,983 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
-2023-11-29 11:03:06,984 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6841 ms
-2023-11-29 11:03:13,265 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'placement_engine_registration'
-2023-11-29 11:03:15,284 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-11-29 11:03:17,868 INFO  [main] org.springframework.cloud.commons.util.InetUtils : Cannot determine local hostname
-2023-11-29 11:03:18,029 INFO  [main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2023-11-29 11:03:19,244 INFO  [main] org.springframework.cloud.commons.util.InetUtils : Cannot determine local hostname
-2023-11-29 11:03:19,512 WARN  [main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-11-29 11:03:19,870 INFO  [main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory : Setting initial instance status as: STARTING
-2023-11-29 11:03:20,022 INFO  [main] com.netflix.discovery.DiscoveryClient : Initializing Eureka in region us-east-1
-2023-11-29 11:03:20,047 INFO  [main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
-2023-11-29 11:03:20,179 INFO  [main] com.netflix.discovery.DiscoveryClient : Disable delta property : false
-2023-11-29 11:03:20,181 INFO  [main] com.netflix.discovery.DiscoveryClient : Single vip registry refresh property : null
-2023-11-29 11:03:20,182 INFO  [main] com.netflix.discovery.DiscoveryClient : Force full registry fetch : false
-2023-11-29 11:03:20,182 INFO  [main] com.netflix.discovery.DiscoveryClient : Application is null : false
-2023-11-29 11:03:20,182 INFO  [main] com.netflix.discovery.DiscoveryClient : Registered Applications size is zero : true
-2023-11-29 11:03:20,182 INFO  [main] com.netflix.discovery.DiscoveryClient : Application version is -1: true
-2023-11-29 11:03:20,182 INFO  [main] com.netflix.discovery.DiscoveryClient : Getting all instance registry info from the eureka server
-2023-11-29 11:03:21,563 INFO  [main] com.netflix.discovery.DiscoveryClient : The response status is 200
-2023-11-29 11:03:21,577 INFO  [main] com.netflix.discovery.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
-2023-11-29 11:03:21,590 INFO  [main] com.netflix.discovery.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2023-11-29 11:03:21,607 INFO  [main] com.netflix.discovery.DiscoveryClient : Discovery Client initialized at timestamp 1701236001600 with initial instances count: 0
-2023-11-29 11:03:21,612 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Registering application PLACEMENT_ENGINE_REGISTRATION_SERVICE with eureka with status UP
-2023-11-29 11:03:21,614 INFO  [main] com.netflix.discovery.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1701236001614, current=UP, previous=STARTING]
-2023-11-29 11:03:21,619 INFO  [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient : DiscoveryClient_PLACEMENT_ENGINE_REGISTRATION_SERVICE/localhost:Placement_Engine_Registration_Service:8082: registering service...
-2023-11-29 11:03:21,754 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8082 (http) with context path ''
-2023-11-29 11:03:21,757 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration : Updating port to 8082
-2023-11-29 11:03:21,911 INFO  [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient : DiscoveryClient_PLACEMENT_ENGINE_REGISTRATION_SERVICE/localhost:Placement_Engine_Registration_Service:8082 - registration status: 204
-2023-11-29 11:03:22,772 INFO  [main] org.springframework.cloud.commons.util.InetUtils : Cannot determine local hostname
-2023-11-29 11:03:22,838 INFO  [main] com.placement.engine.app.PlacementEngineRegistrationServiceApplication : Started PlacementEngineRegistrationServiceApplication in 26.06 seconds (JVM running for 29.818)
-2023-11-29 11:03:51,586 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : Disable delta property : false
-2023-11-29 11:03:51,587 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : Single vip registry refresh property : null
-2023-11-29 11:03:51,619 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : Force full registry fetch : false
-2023-11-29 11:03:51,619 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : Application is null : false
-2023-11-29 11:03:51,633 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : Registered Applications size is zero : true
-2023-11-29 11:03:51,638 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : Application version is -1: false
-2023-11-29 11:03:51,646 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : Getting all instance registry info from the eureka server
-2023-11-29 11:03:51,816 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : The response status is 200
-2023-11-29 11:04:42,594 INFO  [http-nio-8082-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-11-29 11:10:50,037 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
-2023-11-29 11:10:50,434 INFO  [SpringApplicationShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Unregistering application PLACEMENT_ENGINE_REGISTRATION_SERVICE with eureka with status DOWN
-2023-11-29 11:10:50,439 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1701236450439, current=DOWN, previous=UP]
-2023-11-29 11:10:50,441 INFO  [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient : DiscoveryClient_PLACEMENT_ENGINE_REGISTRATION_SERVICE/localhost:Placement_Engine_Registration_Service:8082: registering service...
-2023-11-29 11:10:50,590 INFO  [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient : DiscoveryClient_PLACEMENT_ENGINE_REGISTRATION_SERVICE/localhost:Placement_Engine_Registration_Service:8082 - registration status: 204
-2023-11-29 11:10:51,040 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'placement_engine_registration'
-2023-11-29 11:10:51,321 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : Shutting down DiscoveryClient ...
-2023-11-29 11:10:54,697 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : Unregistering ...
-2023-11-29 11:10:54,828 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : DiscoveryClient_PLACEMENT_ENGINE_REGISTRATION_SERVICE/localhost:Placement_Engine_Registration_Service:8082 - deregister  status: 200
-2023-11-29 11:10:54,854 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : Completed shut down of DiscoveryClient
-2023-11-29 11:12:40,345 INFO  [main] com.placement.engine.app.PlacementEngineRegistrationServiceApplication : Starting PlacementEngineRegistrationServiceApplication using Java 21.0.1 on Lenovo41 with PID 19520 (C:\Users\bhard\IdeaProjects\placement_engine\placement-engine-registration-service\placement-engine-registration-service\target\classes started by bhard in C:\Users\bhard\IdeaProjects\placement_engine)
-2023-11-29 11:12:40,351 DEBUG [main] com.placement.engine.app.PlacementEngineRegistrationServiceApplication : Running with Spring Boot v2.7.16, Spring v5.3.30
-2023-11-29 11:12:40,352 INFO  [main] com.placement.engine.app.PlacementEngineRegistrationServiceApplication : No active profile set, falling back to 1 default profile: "default"
-2023-11-29 11:12:42,413 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-11-29 11:12:42,850 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 414 ms. Found 6 JPA repository interfaces.
-2023-11-29 11:12:43,486 INFO  [main] org.springframework.cloud.context.scope.GenericScope : BeanFactory id=626e1908-f5cc-3575-9da2-f8bee75c5d69
-2023-11-29 11:12:43,671 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'datasource' of type [com.placement.engine.app.configuration.Datasource$$EnhancerBySpringCGLIB$$d4736aee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-11-29 11:12:45,083 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8082 (http)
-2023-11-29 11:12:45,101 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
-2023-11-29 11:12:45,103 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.80]
-2023-11-29 11:12:45,652 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
-2023-11-29 11:12:45,652 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5163 ms
-2023-11-29 11:12:51,542 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'placement_engine_registration'
-2023-11-29 11:12:52,934 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-11-29 11:12:55,125 INFO  [main] org.springframework.cloud.commons.util.InetUtils : Cannot determine local hostname
-2023-11-29 11:12:55,226 INFO  [main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2023-11-29 11:12:56,337 INFO  [main] org.springframework.cloud.commons.util.InetUtils : Cannot determine local hostname
-2023-11-29 11:12:56,516 WARN  [main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-11-29 11:12:56,823 INFO  [main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory : Setting initial instance status as: STARTING
-2023-11-29 11:12:56,952 INFO  [main] com.netflix.discovery.DiscoveryClient : Initializing Eureka in region us-east-1
-2023-11-29 11:12:56,968 INFO  [main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
-2023-11-29 11:12:57,084 INFO  [main] com.netflix.discovery.DiscoveryClient : Disable delta property : false
-2023-11-29 11:12:57,086 INFO  [main] com.netflix.discovery.DiscoveryClient : Single vip registry refresh property : null
-2023-11-29 11:12:57,086 INFO  [main] com.netflix.discovery.DiscoveryClient : Force full registry fetch : false
-2023-11-29 11:12:57,087 INFO  [main] com.netflix.discovery.DiscoveryClient : Application is null : false
-2023-11-29 11:12:57,087 INFO  [main] com.netflix.discovery.DiscoveryClient : Registered Applications size is zero : true
-2023-11-29 11:12:57,088 INFO  [main] com.netflix.discovery.DiscoveryClient : Application version is -1: true
-2023-11-29 11:12:57,088 INFO  [main] com.netflix.discovery.DiscoveryClient : Getting all instance registry info from the eureka server
-2023-11-29 11:12:58,146 INFO  [main] com.netflix.discovery.DiscoveryClient : The response status is 200
-2023-11-29 11:12:58,151 INFO  [main] com.netflix.discovery.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
-2023-11-29 11:12:58,158 INFO  [main] com.netflix.discovery.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2023-11-29 11:12:58,169 INFO  [main] com.netflix.discovery.DiscoveryClient : Discovery Client initialized at timestamp 1701236578166 with initial instances count: 0
-2023-11-29 11:12:58,174 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Registering application PLACEMENT_ENGINE_REGISTRATION_SERVICE with eureka with status UP
-2023-11-29 11:12:58,176 INFO  [main] com.netflix.discovery.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1701236578175, current=UP, previous=STARTING]
-2023-11-29 11:12:58,179 INFO  [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient : DiscoveryClient_PLACEMENT_ENGINE_REGISTRATION_SERVICE/localhost:Placement_Engine_Registration_Service:8082: registering service...
-2023-11-29 11:12:58,302 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8082 (http) with context path ''
-2023-11-29 11:12:58,304 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration : Updating port to 8082
-2023-11-29 11:12:58,339 INFO  [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient : DiscoveryClient_PLACEMENT_ENGINE_REGISTRATION_SERVICE/localhost:Placement_Engine_Registration_Service:8082 - registration status: 204
-2023-11-29 11:12:59,327 INFO  [main] org.springframework.cloud.commons.util.InetUtils : Cannot determine local hostname
-2023-11-29 11:12:59,366 INFO  [main] com.placement.engine.app.PlacementEngineRegistrationServiceApplication : Started PlacementEngineRegistrationServiceApplication in 21.251 seconds (JVM running for 23.735)
-2023-11-29 11:13:10,050 INFO  [http-nio-8082-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-11-29 11:13:28,161 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : Disable delta property : false
-2023-11-29 11:13:28,163 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : Single vip registry refresh property : null
-2023-11-29 11:13:28,163 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : Force full registry fetch : false
-2023-11-29 11:13:28,165 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : Application is null : false
-2023-11-29 11:13:28,165 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : Registered Applications size is zero : true
-2023-11-29 11:13:28,165 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : Application version is -1: false
-2023-11-29 11:13:28,165 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : Getting all instance registry info from the eureka server
-2023-11-29 11:13:28,274 INFO  [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient : The response status is 200
-2023-11-29 11:15:31,405 INFO  [SpringApplicationShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Unregistering application PLACEMENT_ENGINE_REGISTRATION_SERVICE with eureka with status DOWN
-2023-11-29 11:15:31,447 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1701236731447, current=DOWN, previous=UP]
-2023-11-29 11:15:31,450 INFO  [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient : DiscoveryClient_PLACEMENT_ENGINE_REGISTRATION_SERVICE/localhost:Placement_Engine_Registration_Service:8082: registering service...
-2023-11-29 11:15:31,965 INFO  [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient : DiscoveryClient_PLACEMENT_ENGINE_REGISTRATION_SERVICE/localhost:Placement_Engine_Registration_Service:8082 - registration status: 204
-2023-11-29 11:15:32,047 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'placement_engine_registration'
-2023-11-29 11:15:32,135 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : Shutting down DiscoveryClient ...
-2023-11-29 11:15:35,157 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : Unregistering ...
-2023-11-29 11:15:35,280 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : DiscoveryClient_PLACEMENT_ENGINE_REGISTRATION_SERVICE/localhost:Placement_Engine_Registration_Service:8082 - deregister  status: 200
-2023-11-29 11:15:35,299 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : Completed shut down of DiscoveryClient
+2023-12-14 09:39:43,016 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 09:44:47,005 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 09:49:47,012 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 09:54:47,023 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 09:59:47,036 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 10:04:47,044 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 10:09:47,050 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 10:14:47,063 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 10:19:47,074 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 10:24:47,084 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 10:29:47,093 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 10:34:47,106 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 10:39:47,113 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 10:44:47,119 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 10:49:47,129 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 10:54:47,140 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 10:59:47,154 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 11:04:47,160 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 11:09:47,162 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 11:14:47,170 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 11:19:47,173 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 11:24:47,179 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 11:29:47,186 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 11:34:47,193 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 11:39:47,197 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 11:44:47,202 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 11:49:47,219 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 11:54:47,234 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 11:59:47,237 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 12:04:47,240 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 12:09:47,241 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 12:14:47,254 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 12:19:47,258 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 12:24:47,275 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 12:29:47,280 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 12:34:47,296 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 12:39:47,302 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 12:44:47,305 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 12:49:47,319 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 12:54:47,331 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 12:59:47,333 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 13:04:47,342 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 13:09:47,356 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 13:14:47,367 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 13:19:47,372 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 13:24:47,375 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 13:29:47,381 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 13:34:47,396 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 13:39:47,405 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 13:44:47,410 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 13:49:47,419 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2023-12-14 13:54:47,434 INFO  [AsyncResolver-bootstrap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration

@@ -18,6 +18,8 @@ public class MailController {
      private MailSender mailSender;
 
 
+
+
     @KafkaListener(topics = { "mailInfo" })
     private void sendMail(@RequestBody String mailDetail) throws JsonProcessingException, AddressException {
         ObjectMapper objectmapper = new ObjectMapper();

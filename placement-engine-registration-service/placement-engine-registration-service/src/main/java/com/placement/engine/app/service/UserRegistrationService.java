@@ -12,11 +12,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
+
 import java.util.ArrayList;
 import java.util.List;
+
 
 @Service
 @Slf4j
@@ -97,6 +96,7 @@ public class UserRegistrationService {
     }
 
     public String findByUsername(String username){
+        System.out.println(username);
         return userRegistration.findByUsername(username);
     }
 }

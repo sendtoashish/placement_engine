@@ -1,6 +1,7 @@
 package com.placement.engine.app.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,6 +13,8 @@ import javax.persistence.*;
 @Entity(name="recruiterregistration_details")
 @Data
 @Transactional
+//@JsonIgnoreProperties(ignoreUnknown = true)
+
 public class RecruiterRegistration {
 
     @Id

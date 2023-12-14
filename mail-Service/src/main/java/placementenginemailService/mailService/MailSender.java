@@ -42,7 +42,7 @@ public class MailSender {
 
             mm.setSubject(mailinfo.getSubject());
 
-            mm.setText("your otp is" +mailinfo.getOtp(), "utf-8", "html");
+            mm.setText(mailinfo.getMessage(), "utf-8", "html");
             Transport.send(mm);
             log.debug("Email sent successfully...");
             return true;

@@ -11,10 +11,13 @@
         <option value="$PROJECT_DIR$/mail-Service/pom.xml" />
         <option value="$PROJECT_DIR$/placement-engine-authentication-service/placement-engine-authentication-service/pom.xml" />
         <option value="$PROJECT_DIR$/placement-engine-authentication/pom.xml" />
+        <option value="$PROJECT_DIR$/job-posting/job-posting/pom.xml" />
+        <option value="$PROJECT_DIR$/placement-engine-review-service/placement-engine-review-service/pom.xml" />
+        <option value="$PROJECT_DIR$/placement-engine-config-server/placement-engine-config-server/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_20" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

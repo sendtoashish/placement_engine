@@ -24,6 +24,7 @@ public class RecruiterRegistrationService {
         if(companyFromDb != null){
             recruiter.setCompany(companyFromDb);
         }else{
+            Company newCompany = companyDAO.save(company);
             recruiter.setCompany(company);
         }
         recruiterRegistrationDAO.save(recruiter);

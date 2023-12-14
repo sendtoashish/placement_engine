@@ -1,0 +1,59 @@
+server:
+  port: 8083
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: http://34.16.184.43:29092
+      group-id: group_id
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+    producer:
+      bootstrap-servers: http://34.16.184.43:29092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+
+  datasource:
+    jdbc-url: jdbc:mysql://localhost:3306/placement_engine
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root123
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL8Dialect
+    hikari:
+      poolName: ecommerce
+      initialization-fail-timeout: 0
+      connection-timeout: 50000
+      idleTimeout: 300000
+      maximum-pool-size: 10
+      max-lifetime: 900000
+      minimumIdle: 10
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+logging:
+  file:
+    name: log/registration.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    #root: DEBUG
+    org.springframework.web: ERROR
+    com.placement: DEBUG
+    org.hibernate: ERROR
+    com.zaxxer.hikari.HikariConfig: ERROR
+    com.zaxxer.hikari: ERROR
+
+

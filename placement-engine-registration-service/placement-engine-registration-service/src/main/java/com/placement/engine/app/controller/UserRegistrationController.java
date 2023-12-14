@@ -45,8 +45,8 @@ public class UserRegistrationController {
     @PostMapping(value = "/saveuserdetails", consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.MULTIPART_FORM_DATA_VALUE})
     public ResponseEntity<Otp> saveBranch(@ModelAttribute UserDetails user, @RequestParam(value = "file", required = false) MultipartFile file) throws IOException {
         Otp o=userDetailsService.saveUserDetails(user, file);
-        int otps =o.getOtp();
-        mailInfo.setOtp(otps);
+        mailInfo.setSubject("otp for authentication");
+        mailInfo.setMessage("your otp is" + o.getOtp());
         mailInfo.setSendTo(user.getEmail());
         Gson gson = new Gson();
         String mailData = gson.toJson(mailInfo);
@@ -60,8 +60,8 @@ public class UserRegistrationController {
         return ResponseEntity.ok().body(otpVerifyStatus);
     }
 
-    @PostMapping (value="/getpassword")
-    public ResponseEntity<String> getPassword(@RequestBody String username){
+    @PostMapping(value="/getpassword")
+    public ResponseEntity<String> getPassword(@RequestParam String username){
         String password= userRegistrationService.findByUsername(username);
         return ResponseEntity.ok().body(password);
     }

@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/job-posting/job-posting/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/job-posting/job-posting/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mail-Service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mail-Service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/placement-engine-authentication-service/placement-engine-authentication-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/placement-engine-authentication/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/placement-engine-company-service/placement-engine-company-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/placement-engine-config-server/placement-engine-config-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/placement-engine-config-server/placement-engine-config-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/placement-engine-discovery-service/placement-engine-discovery-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/placement-engine-gateway-service/placement-engine-gateway-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/placement-engine-gateway-service/placement-engine-gateway-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/placement-engine-registration-service/placement-engine-registration-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/placement-engine-review-service/placement-engine-review-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/placement-engine-review-service/placement-engine-review-service/src/main/resources" charset="UTF-8" />
   </component>
 </project>

@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 @Data
 public class MailInfo {
 
-    private String sendTo;
-    private int otp;
+   private String sendTo;
+    private String message;
+    private String subject;
 
-    private String subject = "Your Otp is in the message";
 }

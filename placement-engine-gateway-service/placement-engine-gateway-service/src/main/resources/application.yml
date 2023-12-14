@@ -20,3 +20,12 @@ spring:
           uri: http://localhost:8082
           predicates:
             - Path=/register/**
+        - id: Placement_Engine_Authentication_Service
+          uri: http://localhost:8080
+          predicates:
+            - Path=/user/Authentication/**
+        - id: Placement_Engine_JobPosting_Service
+          uri: http://localhost:8088
+          predicates:
+            - Path=/JobPosting/byRecruiter/**
+            - Path=/Job/apply/**
